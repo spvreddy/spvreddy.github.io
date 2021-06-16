@@ -1,0 +1,9 @@
+addons:
+  sonarcloud:
+    organization: "spvreddy"
+    token:
+      secure: "59bc417a1d5c25ef46c1355a0f2182a1f2085d92" # encrypted value of your token
+
+script:
+  # the following command line builds the project, runs the tests with coverage and then execute the SonarCloud analysis
+  - sonar-scanner
